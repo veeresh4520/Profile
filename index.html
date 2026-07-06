@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/css/lightgallery-bundle.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <h2 style="color: #f8f9fa;">Veeresh Portfolio</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/veeresh-yadav-a469a0374/" target="_blank" title="LinkedIn">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4B0lk6cO-FZhgOKOKVr5Fk4RIsDLEhRMFjQ&s" style="width:50px; height: 50px;">
+                    </a>
+                    <a href="https://github.com/veeresh4520" title="GitHub">
+                        <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" style="width:50px; height:50px">
+                    </a>
+                   <a href="https://codeforces.com/profile/Veerrr" target="_blank" title="Codeforces">
+                        <img src="https://sta.codeforces.com/s/0/favicon-32x32.png" style="width:50px; height:50px; padding: 10px; background-color: white; border-radius: 50%;">
+                    </a>
+                    <a href="https://leetcode.com/u/veeresh4520/" target="_blank" title="LeetCode">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" style="width:50px; height:50px; filter: invert(1);">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+        <div class="header-container2">
+            <div class="header-container">
+                <h1 class="display-4">VEERESH YADAV</h1>
+                <p class="lead">CSE Student | AI Enthusiast </p>
+            </div>
+            <img src="profile.jpg" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-5" id="skills">
+        <div class="container">
+            <h2 class="section-title text-center">My Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Prompt Engineering</h4>
+                        <p>Productive communication with LLM's</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Java</h4>
+                        <p>Backend Programming</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>HTML CSS and JavaScript</h4>
+                        <p>Frontent Development</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>AI Fundamentals</h4>
+                        <p>Understanding the basics of Artificial Intelligence</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>Generative AI Fundamentals</h4>
+                        <p>Understanding the basics of Generative AI</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <h4>AI Tools</h4>
+                        <p>Proficient in using various AI tools and platforms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5 bg-light" id="projects">
+        <div class="container">
+            <h2 class="section-title text-center">My Projects</h2>
+
+            <!-- Frontend Projects Carousel -->
+            <h4 class="carousel-subtitle">Frontend Projects</h4>
+            <div id="frontendCarousel" class="carousel slide project-carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Portfolio Website</h5>
+                                        <p class="card-text">Personal portfolio with modern design<br>Languages: HTML, CSS, Bootstrap, JavaScript</p>
+                                        <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title"> Incredible 🚩 Maharashtra </h5>
+                                        <p class="card-text">Explore MH!!!<br>Languages: HTML, CSS, JavaScript</p>
+                                        <a href="https://github.com/veeresh4520/Maharashtra" target="_blank" class="btn btn-primary">View Project</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">More Coming Soon!!</h5>
+                                        <p class="card-text"><br></p>
+                                        <a href="#" target="_blank" class="btn btn-primary">Coming Soon</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#frontendCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#frontendCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+            <!-- Java Projects Carousel -->
+<!-- Java Projects Carousel -->
+<h4 class="carousel-subtitle mt-5">Java Projects</h4>
+<div id="javaCarousel" class="carousel slide project-carousel" data-bs-ride="false">
+    <div class="carousel-inner">
+
+        <!-- First Slide -->
+        <div class="carousel-item active">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tic-Tac-Toe</h5>
+                            <p class="card-text">
+                                Can you defeat the compiler?<br>
+                                Language: Java
+                            </p>
+                            <a href="https://github.com/veeresh4520/Tic-Tac-Toe/tree/main"
+                               target="_blank"
+                               class="btn btn-primary">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Four Queens</h5>
+                            <p class="card-text">
+                                Can you place all the queens safely?<br>
+                                Language: Java
+                            </p>
+                            <a href="https://github.com/veeresh4520/4-Queens"
+                               target="_blank"
+                               class="btn btn-primary">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Examination Management System</h5>
+                            <p class="card-text">
+                                Manage exams and student results with ease.<br>
+                                Language: Java
+                            </p>
+                            <a href="https://github.com/SK-Sathyavada-008/Quiz-Analysis"
+                               target="_blank"
+                               class="btn btn-primary">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div class="carousel-item">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Number Guessing Game</h5>
+                            <p class="card-text">
+                                Can you guess the number right?<br>
+                                Language: Java
+                            </p>
+                            <a href="https://github.com/veeresh4520/Number---Gussing--Game"
+                               target="_blank"
+                               class="btn btn-primary">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#javaCarousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#javaCarousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+            <!-- Collaboration Projects -->
+            <h4 class="carousel-subtitle mt-5">Collaboration Projects</h4>
+            <div id="collabCarousel" class="carousel slide project-carousel" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">TimeWaste Pro</h5>
+                                        <p class="card-text">The most productive way to procrastinate<br>Language: HTML, CSS, JavaScript</p>
+                                        <a href="https://timewaste-pro.netlify.app/" target="_blank" class="btn btn-primary">View Project</a>
+                                        <p class="mt-2" style="font-size:0.78rem; color:#3a3a38; letter-spacing:0.06em;">Collaborator: Sai Keerthana </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card project-card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Velora</h5>
+                                        <p class="card-text">AI-powered search & learning engine with LRU Cache<br>Language: Java</p>
+                                        <a href="https://search-engine1.lovable.app/" target="_blank" class="btn btn-primary">View Project</a>
+                                        <p class="mt-2" style="font-size:0.78rem; color:#3a3a38; letter-spacing:0.06em;">Collaborator: Sai Keerthana</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#collabCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#collabCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+             <div class="text-center mt-4">
+            <a href="https://github.com/veeresh4520"
+               target="_blank"
+               class="btn btn-primary">
+                View More
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+
+    <section class="py-5" id="certificates">
+    <div class="container">
+        <h2 class="section-title text-center">My Certificates</h2>
+
+        <div id="certificatesCarousel"
+             class="carousel slide certificate-carousel"
+             data-bs-ride="false">
+
+            <div class="carousel-inner">
+
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+
+                        <div class="col-md-4">
+                            <div id="lightgallery">
+
+                                <a href="Fluency.png" class="certificate-card">
+
+                                    <img src="Fluency.png"
+                                         class="img-fluid"
+                                         alt="Certificate">
+
+                                    <div class="certificate-overlay">
+
+                                        <button class="btn btn-light">
+                                            View
+                                        </button>
+
+                                    </div>
+
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+
+                <!-- Second Slide -->
+<div class="carousel-item">
+    <div class="row justify-content-center">
+
+        <div class="col-md-4">
+            <div id="lightgallery2">
+
+                <a href="Harvard.jpg" class="certificate-card">
+    <img src="Harvard.jpg" class="img-fluid" alt="Certificate 2">
+
+                    <div class="certificate-overlay">
+                        <button class="btn btn-light">
+                            View
+                        </button>
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- third slide -->
+    <div class="carousel-item">
+    <div class="row justify-content-center">
+
+        <div class="col-md-4">
+            <div id="lightgallery2">
+
+                <a href="GenAi.jpg" class="certificate-card">
+    <img src="GenAi.jpg" class="img-fluid" alt="Certificate 2">
+
+                    <div class="certificate-overlay">
+                        <button class="btn btn-light">
+                            View
+                        </button>
+                    </div>
+
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+            </div>
+
+            <!-- Previous -->
+            <button class="carousel-control-prev"
+                    id="prevBtn"
+                    type="button"
+                    data-bs-target="#certificatesCarousel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <!-- Next -->
+            <button class="carousel-control-next"
+                    id="nextBtn"
+                    type="button"
+                    data-bs-target="#certificatesCarousel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="https://www.linkedin.com/in/veeresh-yadav-a469a0374/"
+               target="_blank"
+               class="btn btn-primary">
+                View More
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; Veeresh Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (required for navbar toggle + carousels to work) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- lightGallery core + plugins (loaded once, in correct order) -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.8.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script>
+       lightGallery(document.getElementById("lightgallery"), {
+    speed: 500,
+    selector: "a",
+    download: true,
+    thumbnail: true,
+    zoom: true
+});
+
+lightGallery(document.getElementById("lightgallery2"), {
+    speed: 500,
+    selector: "a",
+    download: true,
+    thumbnail: true,
+    zoom: true
+});
+    </script>
+    
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" style="
+        position: fixed;
+        bottom: 36px;
+        right: 36px;
+        width: 44px;
+        height: 44px;
+        background: var(--black);
+        color: var(--white);
+        border: 1px solid var(--grey-dark);
+        border-radius: 0;
+        font-size: 1.1rem;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    ">&#8593;</button>
+
+    <script>
+        const btn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                btn.style.opacity = '1';
+                btn.style.pointerEvents = 'auto';
+            } else {
+                btn.style.opacity = '0';
+                btn.style.pointerEvents = 'none';
+            }
+        });
+        btn.addEventListener('mouseenter', () => {
+            btn.style.background = 'transparent';
+            btn.style.color = 'var(--black)';
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.background = 'var(--black)';
+            btn.style.color = 'var(--white)';
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const items = document.querySelectorAll("#certificatesCarousel .carousel-item");
+            const prevBtn = document.getElementById("prevBtn");
+            const nextBtn = document.getElementById("nextBtn");
+            if(items.length<=1){
+                prevBtn.style.display="none";
+                nextBtn.style.display="none";
+            }
+        });
+    </script>
+
+</body>
+</html>
