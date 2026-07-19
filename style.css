@@ -48,6 +48,13 @@ body {
     color: var(--white) !important;
 }
 
+.social-icons {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
 .social-icons a {
     color: var(--grey-mid);
     font-size: 24px;
@@ -173,6 +180,10 @@ body {
     text-transform: uppercase;
     color: var(--grey-dark);
     margin: 0;
+}
+
+#education {
+    background: var(--white);
 }
 
 #projects {
