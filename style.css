@@ -1,24 +1,25 @@
 :root {
-        --black: #0a0a0a;
-        --white: #f5f5f3;
-        --grey-light: #f0efed;
-        --grey-mid: #c8c8c4;
-        --grey-dark: #3a3a38;
-        --grey-subtle: #e8e8e5;
-    }
+    --black: #0a0a0a;
+    --white: #f5f5f3;
+    --grey-light: #f0efed;
+    --grey-mid: #c8c8c4;
+    --grey-dark: #3a3a38;
+    --grey-subtle: #e8e8e5;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Certificate card styling has been refactored and moved to the certificates section below */
+
 body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 300;
     background: var(--white);
     color: var(--black);
     letter-spacing: 0.01em;
+    overflow-x: hidden;
 }
 
 .navbar {
@@ -29,10 +30,11 @@ body {
 .navbar h2 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 4vw, 1.5rem);
     color: var(--white) !important;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+    margin: 0;
 }
 .nav-link {
     font-family: 'DM Sans', sans-serif;
@@ -150,6 +152,126 @@ body {
     }
     50% {
         transform: translateY(-8px);
+    }
+}
+
+/* Responsive adjustments for Header, Navbar & Navigation (Tablets & Mobile) */
+@media (max-width: 991.98px) {
+    .navbar {
+        padding: 14px 0;
+    }
+    .navbar-collapse {
+        padding-top: 14px;
+        padding-bottom: 12px;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-bottom: 12px !important;
+    }
+    .nav-link {
+        padding: 8px 12px !important;
+        font-size: 0.82rem;
+    }
+    .social-icons {
+        justify-content: center;
+        gap: 16px;
+        margin-top: 10px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .social-icons a {
+        margin-left: 0;
+    }
+    .social-icons a img {
+        width: 38px !important;
+        height: 38px !important;
+    }
+    
+    /* Hero Section Responsive Layout for Tablets & Mobile (< 992px) */
+    .hero-section {
+        height: auto;
+        min-height: auto;
+        padding: 36px 16px 44px;
+        overflow: hidden;
+    }
+    .header-container2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+        height: auto;
+    }
+    .header-container {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+    .header-container::after {
+        display: none;
+    }
+    .hero-section h1 {
+        font-size: clamp(1.8rem, 6vw, 2.8rem);
+        text-align: center;
+        line-height: 1.18;
+        margin-bottom: 10px;
+    }
+    .hero-section .lead {
+        font-size: clamp(0.7rem, 2.5vw, 0.82rem);
+        text-align: center;
+        letter-spacing: 0.16em;
+    }
+    .hero-image-wrap {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .hero-image {
+        width: min(290px, 75vw);
+        height: min(290px, 75vw);
+        aspect-ratio: 1 / 1;
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 14px 35px rgba(0, 0, 0, 0.35);
+        object-fit: cover;
+    }
+    
+    @keyframes heroImageSlideIn {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* Page Sub-Heading Back Arrow Responsive */
+@media (max-width: 576px) {
+    .heading-with-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+    }
+    .back-arrow-btn {
+        position: relative;
+        left: auto;
+        top: auto;
+        transform: none;
+        align-self: flex-start;
+        margin-bottom: 4px;
+    }
+    .back-arrow-btn:hover {
+        transform: translateX(-4px);
     }
 }
 
@@ -476,6 +598,7 @@ footer p {
     padding-top: 80px !important;
     padding-bottom: 80px !important;
 }
+
 /* Carousel Styles */
 .project-carousel,
 .certificate-carousel,
@@ -641,11 +764,6 @@ footer p {
 .delay-3 { transition-delay: 0.3s; }
 .delay-4 { transition-delay: 0.4s; }
 .delay-5 { transition-delay: 0.5s; }
-
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    color: var(--grey-dark);
-}
 
 .osc-status-badge {
     font-family: 'DM Sans', sans-serif;
